@@ -9,7 +9,7 @@ def main():
     dispatcher = updater.dispatcher
     start_handler = CommandHandler('start', start)
     dispatcher.add_handler(start_handler)
-    updater.start_polling
+    updater.start_polling()
 
 if __name__ == '__main__':
     main()
